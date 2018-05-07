@@ -8,6 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -345,3 +346,187 @@ template {
 [hidden] {
   display: none;
 }
+@charset "UTF-8";
+/* line 3, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 4, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+body {
+  background-color: #e4ecf0;
+  font-size: 16px;
+  font-family: "游明朝","Yu Mincho","游明朝体","YuMincho","ヒラギノ明朝 Pro W3","Hiragino Mincho Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo, Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  /*フォント指定*/
+}
+
+/* line 6, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 12, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+header {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #4dc4ff;
+}
+
+/* line 7, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 20, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+header p {
+  color: #fff;
+  text-align: center;
+  padding: 5px 0 10px 0;
+  font-size: 1.8em;
+  margin-top: 0px;
+}
+
+/* line 9, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 29, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 10, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 36, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+#wrapper .toukoBG {
+  width: 960px;
+  padding: 20px 40px 20px 40px;
+  background-color: #b5e6ff;
+}
+
+/* line 11, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 43, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+#wrapper .touko {
+  width: 850px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* line 13, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 50, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+#wrapper .bottom_main {
+  width: 960px;
+  height: 100%;
+  background-color: #fff;
+  padding: 20px 40px 20px 40px;
+}
+
+/* line 15, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 58, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.coment {
+  width: 960px;
+}
+
+/* line 16, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 63, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.coment .table_content {
+  float: left;
+}
+
+/* line 17, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 68, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.coment td {
+  width: 900px;
+  height: 50px;
+  text-align: center;
+}
+
+/* line 18, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 75, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.coment .btn {
+  /* border: 1px solid #cccccc; */
+  font-size: 1,5rem;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #454545;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+
+/* line 19, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 87, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.coment .btn_edit {
+  /* border-radius: 3px; */
+  /* background-color: #dddddd; */
+  /* float: left; */
+}
+
+/* line 20, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 94, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.coment .btn_delete {
+  border-radius: 3px;
+  background-color: #dddddd;
+  float: right;
+}
+
+/* line 22, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 101, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #4dc4ff;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 23, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 110, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.footer_content p {
+  text-align: center;
+  padding-top: 10px;
+  color: #fff;
+}
+
+/* line 116, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.new_comment {
+  text-align: center;
+}
+
+/* line 117, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.new_text01 {
+  text-align: center;
+}
+
+/* line 119, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+body {
+  background: url(/assets/twitter-6ee27d9757c03b83025daa8d0af4bd85653dfefc1f4b03372d906352cf26d891.png);
+}
+
+/* line 123, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.field {
+  text-align: center;
+}
+
+/* line 124, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.actions {
+  text-align: center;
+}
+
+/* line 125, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.back_01 {
+  text-align: center;
+}
+
+/* line 126, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.confirm_content {
+  text-align: center;
+}
+
+/* line 128, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+textarea {
+  width: 200px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
