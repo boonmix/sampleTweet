@@ -1,10 +1,13 @@
-<div id="wrapper">
+<div class="container">
+<div id="wrapper row">
+
 
 <p id="notice"><%= notice %></p>
 
 
-<div class="coment" align="center">
+<div class="coment col-mid-1" align="center">
 <table>
+  <%= link_to 'New Tweet', new_tweet_path , class:"newTweet" %>
   <thead>
     <tr>
       <th class="tweetList">Tweet一覧</th>
@@ -14,21 +17,20 @@
 
   <tbody>
     <% @tweets.each do |tweet| %>
+    <div class="row">
       <tr>
-        <td class="btn btn_edit"><%= link_to '編集', edit_tweet_path(tweet),class: 'btn btn-default' %></td>
-        <td><%= tweet.content %></td>
-        <td><%= link_to '消去', tweet_path(tweet), method: :delete, data: { confirm: 'Are you sure?' },class: 'btn btn-default' %></td>
+        <td><h3><%= tweet.content %></h3></td>
+        <td class="btn btn_edit"><%= link_to '編集', edit_tweet_path(tweet), class: 'btn btn-default btn-sm btn-success' %></td>
+        <td><%= link_to '消去', tweet_path(tweet), method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 </div>
+</div>
+</div>
 
-<br>
 
-<div class="new_comment">
-<%= link_to 'New Tweet', new_tweet_path %>
 </div>
-</div>
-</div>
+

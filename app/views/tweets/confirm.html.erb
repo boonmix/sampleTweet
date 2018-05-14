@@ -5,12 +5,12 @@
   <%= form.hidden_field :content %>
 
   <p>本文:<%= @tweet.content %></p>
-  <%= form.submit  "登録する" %>
+  <%= form.submit  "登録する", class:"btn btn-primary" %>
 <% end %>
 
 <%= form_with(model: @tweet, url: new_tweet_path, method: 'get', local: true) do |form| %>
       <%= form.hidden_field :content %>
-      <%= form.submit "もどる", name: 'back', class: 'btn btn-default btn-block' %>
+      <%= form.submit "もどる", name: 'back', class: 'btn btn-default btn-sm btn-success' %>
     <% end %>
 </div>
 

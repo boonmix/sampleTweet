@@ -27,7 +27,6 @@ class TweetsController < ApplicationController
       if @tweet.update(tweet_params)
         redirect_to tweets_path
       end
-    
   end
 
   def destroy
@@ -41,7 +40,6 @@ class TweetsController < ApplicationController
   end
 
   private
-   
     def tweet_params
       params.require(:tweet).permit(:content)
     end
@@ -50,5 +48,4 @@ class TweetsController < ApplicationController
     def set_tweet
       @tweet = Tweet.find(params[:id])
     end
-
 end

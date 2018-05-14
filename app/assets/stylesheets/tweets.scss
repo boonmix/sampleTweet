@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* line 3, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 4, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
 body {
   background-color: #e4ecf0;
   font-size: 16px;
@@ -8,6 +9,7 @@ body {
 }
 
 /* line 6, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 12, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
 header {
   width: 100%;
   height: 50px;
@@ -16,6 +18,7 @@ header {
 }
 
 /* line 7, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 20, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
 header p {
   color: #fff;
   text-align: center;
@@ -25,13 +28,15 @@ header p {
 }
 
 /* line 9, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 29, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
 #wrapper {
-  width: 960px;
-  margin: 0 auto;
+  /* width: 960px; */
+  /* margin: 0 auto; */
   position: relative;
 }
 
 /* line 10, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 36, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
 #wrapper .toukoBG {
   width: 960px;
   padding: 20px 40px 20px 40px;
@@ -39,6 +44,7 @@ header p {
 }
 
 /* line 11, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 43, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
 #wrapper .touko {
   width: 850px;
   border-radius: 5px;
@@ -46,31 +52,36 @@ header p {
 }
 
 /* line 13, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 50, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
 #wrapper .bottom_main {
-  width: 960px;
+  /*width: 960px;*/
   height: 100%;
   background-color: #fff;
   padding: 20px 40px 20px 40px;
 }
 
 /* line 15, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 58, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
 .coment {
-  width: 960px;
+  /* width: 960px; */
 }
 
 /* line 16, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 63, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
 .coment .table_content {
   float: left;
 }
 
 /* line 17, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 68, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
 .coment td {
-  width: 900px;
+  /*width: 200px;
   height: 50px;
-  text-align: center;
+  text-align: center;*/
 }
 
 /* line 18, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 75, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
 .coment .btn {
   /* border: 1px solid #cccccc; */
   font-size: 1,5rem;
@@ -83,6 +94,7 @@ header p {
 }
 
 /* line 19, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 87, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
 .coment .btn_edit {
   /* border-radius: 3px; */
   /* background-color: #dddddd; */
@@ -90,6 +102,7 @@ header p {
 }
 
 /* line 20, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 94, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
 .coment .btn_delete {
   border-radius: 3px;
   background-color: #dddddd;
@@ -97,37 +110,71 @@ header p {
 }
 
 /* line 22, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 101, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
 footer {
   width: 100%;
   height: 50px;
   background-color: #4dc4ff;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
 /* line 23, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+/* line 110, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
 .footer_content p {
   text-align: center;
   padding-top: 10px;
   color: #fff;
 }
 
-.new_comment { text-align: center; }
-.new_text01 { text-align: center; }
-
-body{
-    background: image-url('twitter.png')
+/* line 116, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.new_comment {
+  text-align: center;
 }
 
-.field { text-align: center;}
-.actions { text-align: center; }
-.back_01 { text-align: center; }
-.confirm_content { text-align: center; }
-
-textarea{
-width: 200px;
+/* line 117, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.new_text01 {
+  text-align: center;
 }
 
-.edit_topText { text-align: center; }
+/* line 119, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+body {
+  background: url(/assets/twitter-6ee27d9757c03b83025daa8d0af4bd85653dfefc1f4b03372d906352cf26d891.png);
+}
 
-.edit_back { text-align: center; }
+/* line 123, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.field {
+  text-align: center;
+}
+
+/* line 124, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.actions {
+  text-align: center;
+}
+
+/* line 125, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.back_01 {
+  text-align: center;
+}
+
+/* line 126, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.confirm_content {
+  text-align: center;
+}
+
+/* line 128, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+textarea {
+  width: 200px;
+}
+
+/* line 132, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.edit_topText {
+  text-align: center;
+}
+
+/* line 134, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
+.edit_back {
+  text-align: center;
+}
+
+footer { position: fixed; bottom:0;}
