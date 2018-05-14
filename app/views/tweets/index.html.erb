@@ -1,36 +1,20 @@
 <div class="container">
-<div id="wrapper row">
-
-
 <p id="notice"><%= notice %></p>
 
-
-<div class="coment col-mid-1" align="center">
-<table>
   <%= link_to 'New Tweet', new_tweet_path , class:"newTweet" %>
-  <thead>
-    <tr>
-      <th class="tweetList">Tweet一覧</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  
+      <h2>Tweet一覧</h2>
+    
 
-  <tbody>
-    <% @tweets.each do |tweet| %>
-    <div class="row">
-      <tr>
-        <td><h3><%= tweet.content %></h3></td>
-        <td class="btn btn_edit"><%= link_to '編集', edit_tweet_path(tweet), class: 'btn btn-default btn-sm btn-success' %></td>
-        <td><%= link_to '消去', tweet_path(tweet), method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  
+<% @tweets.each do |tweet| %>
+   <div class="row">
+     <hr color="black">
+     <div class="col-md-4"><p><strong>内容:<%= tweet.content %></p></strong></div>
+     <div class="col-md-4"><p> <%= link_to '編集', edit_tweet_path(tweet), class: 'btn btn-default btn-sm btn-success' %></p></div>
+     <div class="col-md-4"><p> <%= link_to '消去', tweet_path(tweet), method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></p> </div>
+  </div>
+ <% end %>
+  
 
 </div>
-</div>
-</div>
-
-
-</div>
-
