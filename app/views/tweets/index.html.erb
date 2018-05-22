@@ -1,5 +1,5 @@
 <div class="container">
-<p id="notice"><%= notice %></p>
+
 
   
   
@@ -10,9 +10,16 @@
 <% @tweets.each do |tweet| %>
    <div class="row">
      <hr color="black">
+     <%= link_to tweet_path(tweet) do %>
      <div class="col-md-4"><p><strong>内容:<%= tweet.content %></p></strong></div>
-     <div class="col-md-4"><p> <%= link_to '編集', edit_tweet_path(tweet), class: 'btn btn-default btn-sm btn-success' %></p></div>
-     <div class="col-md-4"><p> <%= link_to '消去', tweet_path(tweet), method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></p> </div>
+     <div class="col-md-4"><p><strong>投稿者:<%= tweet.user.name %></p></strong></div>
+     <% end %>
+     <div class="col-md-1"><%= link_to '詳細', tweet_path(tweet), class:"btn btn-info" %></div>
+     <% if tweet.user_id == current_user.id %>
+     <div class="col-md-1"><%= link_to '編集', edit_tweet_path(tweet), class:"btn btn-success" %></div>
+     <div class="col-md-1"><p><%= link_to '消去', tweet_path(tweet), method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger"%></p></div>
+     <% end %>
+     
   </div>
  <% end %>
   

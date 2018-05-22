@@ -1,5 +1,5 @@
 class TweetsController < ApplicationController
-  before_action :set_tweet, only: [:edit, :update, :destroy]
+  before_action :set_tweet, only: [:edit, :update, :destroy, :show]
   before_action :login, only: [:new, :show, :edit]
   
   def index
@@ -8,7 +8,7 @@ class TweetsController < ApplicationController
 
   def new
     if params[:back]
-      @tweet = Tweet.new(tweet_params)
+      @tweet = Tweet.new(tweet_params)##下記のコメントNo.1に定義されてる。
     else
       @tweet = Tweet.new
     end
@@ -18,7 +18,8 @@ class TweetsController < ApplicationController
   end
 
   def create
-   @tweet = Tweet.new(tweet_params)
+    @tweet = Tweet.new(tweet_params)
+    @tweet.user_id = current_user.id  ##ログイン中のユーザー
       if @tweet.save
         redirect_to tweets_path
       end
@@ -37,11 +38,16 @@ class TweetsController < ApplicationController
   
   def confirm
     @tweet = Tweet.new(tweet_params)
+    @tweet.user_id = current_user.id
     render :new if @tweet.invalid?
+  end
+  
+  def show
+    @favorite = current_user.favorites.find_by(tweet_id: @tweet.id)
   end
 
   private
-    def tweet_params
+    def tweet_params##No.1
       params.require(:tweet).permit(:content)
     end
     
@@ -55,4 +61,5 @@ class TweetsController < ApplicationController
       redirect_to new_session_path
     end
     end
+    
  end

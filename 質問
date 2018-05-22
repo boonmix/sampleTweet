@@ -1,0 +1,10 @@
+def new
+    if params[:back]
+      @tweet = Tweet.new(tweet_params)##下記のコメントNo.1に定義されてる。
+    else
+      @tweet = Tweet.new
+    end
+  end
+
+  def edit
+  end

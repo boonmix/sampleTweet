@@ -70,6 +70,7 @@ a {
     font-weight: bold;
     font-size: 25px;
     color: white;
+    padding:10px;
 }
 
 /**
@@ -344,4 +345,12 @@ template {
 
 [hidden] {
   display: none;
+}
+
+ul{
+  text-align: center;
+}
+
+label{
+  font-size: 20px;
 }
