@@ -36,14 +36,14 @@ class TweetsController < ApplicationController
     redirect_to tweets_path
   end
   
+  def show
+    @favorite = current_user.favorites.find_by(tweet_id: @tweet.id)
+  end
+  
   def confirm
     @tweet = Tweet.new(tweet_params)
     @tweet.user_id = current_user.id  
     render :new if @tweet.invalid?
-  end
-  
-  def show
-    @favorite = current_user.favorites.find_by(tweet_id: @tweet.id)
   end
 
   private
