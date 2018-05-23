@@ -14,15 +14,18 @@ class TweetsController < ApplicationController
     end
   end
 
-  def edit
-  end
-
   def create
     @tweet = Tweet.new(tweet_params)
-    @tweet.user_id = current_user.id
+    @tweet.user_id=current_user.id
       if @tweet.save
         redirect_to tweets_path
+      else
+        render 'new'
       end
+   end
+  
+  
+  def edit
   end
 
   def update
@@ -42,7 +45,7 @@ class TweetsController < ApplicationController
   
   def confirm
     @tweet = Tweet.new(tweet_params)
-    @tweet.user_id = current_user.id  
+    @tweet.user_id=current_user.id  
     render :new if @tweet.invalid?
   end
 
