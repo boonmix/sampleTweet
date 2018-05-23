@@ -19,7 +19,7 @@ class TweetsController < ApplicationController
 
   def create
     @tweet = Tweet.new(tweet_params)
-    @tweet.user_id = current_user.id  ##ログイン中のユーザー
+    @tweet.user_id = current_user.id  
       if @tweet.save
         redirect_to tweets_path
       end
