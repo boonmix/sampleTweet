@@ -6,6 +6,7 @@ body {
   font-size: 16px;
   font-family: "游明朝","Yu Mincho","游明朝体","YuMincho","ヒラギノ明朝 Pro W3","Hiragino Mincho Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo, Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
   /*フォント指定*/
+  
 }
 
 /* line 6, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
@@ -140,6 +141,7 @@ footer {
 /* line 119, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
 body {
   background: url(/assets/twitter-6ee27d9757c03b83025daa8d0af4bd85653dfefc1f4b03372d906352cf26d891.png);
+  text-align: center;
 }
 
 /* line 123, /home/ubuntu/workspace/sampleTweet/app/assets/stylesheets/tweets.scss */
@@ -196,4 +198,9 @@ footer { position: fixed; bottom:0;}
 p{color:black;}
 
 .message { text-align: center;}
+
+img{
+  width:250px;
+  height:250px;
+}
 

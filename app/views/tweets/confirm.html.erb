@@ -3,13 +3,17 @@
 
 <%= form_with(model: @tweet, url: tweets_path, local: true) do |form| %>
   <%= form.hidden_field :content %>
-
+  
+  <%= image_tag(@tweet.image) %>
+  
+  <%= hidden_field_tag :"cache[image]",@tweet.image.cache_name %>
   <p>本文:<%= @tweet.content %></p>
   <%= form.submit  "登録する", class:"btn btn-primary" %>
 <% end %>
 
 <%= form_with(model: @tweet, url: new_tweet_path, method: 'get', local: true) do |form| %>
       <%= form.hidden_field :content %>
+      <%= hidden_field_tag :"cache[image]",@tweet.image.cache_name %>
       <%= form.submit "もどる", name: 'back', class: 'btn btn-default btn-sm btn-success' %>
     <% end %>
 </div>

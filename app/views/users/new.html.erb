@@ -23,6 +23,13 @@
 
   <%= f.label :password_confirmation %>
   <%= f.password_field :password_confirmation %>
+  
+   <div class="field">
+    <%= f.label :avatar %>
+    <%= image_tag(@user.avatar.url) if @user.avatar.url %>
+    <%= f.file_field :avatar, id: :avatar_image %>
+    <%= f.hidden_field :avatar_cache %>
+  </div>
 
   <%= f.submit "作成するっちゃ！" %>
 <% end %>

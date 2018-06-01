@@ -17,6 +17,8 @@ class TweetsController < ApplicationController
   def create
     @tweet = Tweet.new(tweet_params)
     @tweet.user_id=current_user.id
+    @tweet.image.retrieve_from_cache!(params[:cache][:image])
+    @tweet.save!
       if @tweet.save
         TweetMailer.tweet_mail(@tweet).deliver
         redirect_to tweets_path
@@ -52,7 +54,7 @@ class TweetsController < ApplicationController
 
   private
     def tweet_params##No.1
-      params.require(:tweet).permit(:content)
+      params.require(:tweet).permit(:content,:image,:image_cache)
     end
     
     

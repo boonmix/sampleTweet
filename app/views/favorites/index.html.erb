@@ -1,11 +1,12 @@
 <div class="container">
 <div class="show">
-<h1><%= current_user.name %>さんお気に入りブログ！</h1>
+<h1><%= current_user.name %>さんお気に入りブログ！</h1><h9>
 
     <% @favorites_tweets.each do |fav| %>
     
        <p>内容:<%= fav.content %></p>
        <p>投稿者:<%= fav.user.name %></p>
+      
      <p><%= link_to '詳細', tweet_path(fav), class:"btn btn-info" %></p>
     <% end %>
 

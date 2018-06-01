@@ -2,6 +2,9 @@
 <div class="show">
 
 <h2>内容:<%= @tweet.content %></h2>
+<p>
+  <%= image_tag @tweet.image %>
+</p>
 
 <p><% unless @tweet.user == current_user %>
   <% if @favorite.present? %>
