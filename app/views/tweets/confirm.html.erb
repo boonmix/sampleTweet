@@ -5,7 +5,6 @@
   <%= form.hidden_field :content %>
   
   <%= image_tag(@tweet.image) %>
-  
   <%= hidden_field_tag :"cache[image]",@tweet.image.cache_name %>
   <p>本文:<%= @tweet.content %></p>
   <%= form.submit  "登録する", class:"btn btn-primary" %>
